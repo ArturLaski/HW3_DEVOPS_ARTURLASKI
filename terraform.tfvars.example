@@ -1,0 +1,27 @@
+# Copy this file to terraform.tfvars and adjust values for your environment
+
+aws_region     = "eu-central-1"
+project_name   = "lesson-8-9"
+cluster_version = "1.29"
+
+# ECR Configuration
+ecr_repository_name = "django-app"
+
+# Jenkins Configuration
+jenkins_namespace     = "jenkins"
+jenkins_chart_version = "5.8.12"
+
+# ArgoCD Configuration
+argocd_namespace     = "argocd"
+argocd_chart_version = "7.6.12"
+
+# Application Configuration
+app_namespace   = "django"
+charts_repo_url = "https://github.com/LaResistancePL/lesson-8-9-charts.git"
+
+# Tags
+tags = {
+  Project = "lesson-8-9"
+  Owner   = "Neoversity"
+  Environment = "dev"
+}
